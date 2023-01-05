@@ -1,9 +1,9 @@
-import pandas as pd
+import pandas as pd 
 def get_csv(return_type, title, initialdir, skip_blank_lines, skiprows):
     '''function for retrieving csv file and returning as indicated format'''
     import tkinter as tk
     from tkinter import filedialog
-    import GeneralFunctions as GeneralFunctions
+    import GeneralFunctions
     csvfile = tk.filedialog.askopenfilename(title=title, initialdir=initialdir, filetype=(("CSV files", ".csv"), ("all files", "*.*")))
     file = open(csvfile)
     if return_type == 'lines':
