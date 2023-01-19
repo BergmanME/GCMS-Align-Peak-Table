@@ -1,6 +1,6 @@
-# metabolomics/AlignedPeakTable
+# GCMS-Align-Peak-Table
 Align peak areas for multiple samples based on user defined profile of features
-https://github.com/BergmanME/metabolomics
+https://github.com/BergmanME/GCMS-Align-Peak-Table
 
 Instructions:
 Download the code, make a profile for your data based on the provided template (.csv), have your output from MassHunter Qualitative Analysis using the export all integrated peak areas option (.csv), run AlignedPeakTable.py
