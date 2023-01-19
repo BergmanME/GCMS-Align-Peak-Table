@@ -1,4 +1,4 @@
-# metabolomics
-Analysis of GCMS data including 13C labeling
+# metabolomics/AlignedPeakTable
+Align peak areas for multiple samples based on user defined profile of features
 https://github.com/BergmanME/metabolomics
-requires: Pandas, Numpy, TKinter
+Run AlignedPeakTable.py

@@ -1,3 +1,4 @@
+print("Starting Script")
 '''Install necessary packages'''
 import os, sys
 import pandas as pd
@@ -15,13 +16,24 @@ if install_packages is True:
         print("error installing packages")
 
 '''make sure python knows where to look for modules'''
-designatemodules=False
+designatemodules = True
 if designatemodules is True:
-    cwd = os.getcwd()
-    print(cwd)
-    modules_path = cwd + "\AlignedPeakTable"
-    sys.path.insert(0, modules_path)
-    print(f"Added {modules_path} as modules folder")
+    # print('designating module location')           
+    pathname = os.path.dirname(sys.argv[0])        
+    # print('full path =', os.path.abspath(pathname))
+    test_modules_path = pathname + "/AlignedPeakTable"
+    sys.path.insert(0, test_modules_path)
+    print(f"Added {test_modules_path} as modules folder")
+
+'''Old designation for modules'''
+# designatemodules=False
+# if designatemodules is True:
+#     cwd = os.getcwd()
+#     print(cwd)
+#     modules_path = cwd + "\AlignedPeakTable"
+#     sys.path.insert(0, modules_path)
+#     print(f"Added {modules_path} as modules folder")
+
 
 
 '''set up the working directory and folders'''
