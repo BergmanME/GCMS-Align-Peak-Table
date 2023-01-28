@@ -9,3 +9,4 @@ Please let me know if you have any issues or suggestions for improvements.
 
 Planned changes:
 Remove necessity for user to input the type for data acquisition. ie remove query for ionization mode and scan settings. This can be automated by search the file for expected strings.
+Add in trim for header lines in profile so that 'Start ' still works even if 'Start' was the intended text string.
